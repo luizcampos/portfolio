@@ -1,0 +1,12 @@
+@font-face {
+    font-family: ArchivoBlack-Regular;
+    src: local(ArchivoBlack-Regular), url(../fonts/ArchivoBlack-Regular.ttf);
+ }
+
+h2{
+    font-family: ArchivoBlack-Regular, 'Times New Roman', 'sans-serif';
+}
+
+.resumeBio{
+    text-align: center;
+}
