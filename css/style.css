@@ -3,10 +3,209 @@
     src: local(ArchivoBlack-Regular), url(../fonts/ArchivoBlack-Regular.ttf);
  }
 
-h2{
+ @media screen and (min-width: 768px) {
+    .card{
+        margin-right: 1.2rem;
+    }
+
+    #cardsSection{
+        margin: 0;
+    }
+ }
+
+ @media screen and (max-width: 576px) {  /*576px ou menos*/
+    .title{
+        font-size: 20px;
+        display: block;
+    }
+
+    .linkMenu{
+        font-size: 0.5em;
+    }
+
+    .resumeBio i{
+        font-size: 1.3em;
+    }
+
+    .sizeText{
+        font-size: 0.9em;
+    }
+
+    .contact{
+        height: 200vw;
+    }
+ }
+
+ @media screen and (min-width: 577px) {  /*577 ou mais*/
+    .title{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    .contact{
+        height: 50vw;
+    }
+ }
+
+
+
+h1, h2, h3{
     font-family: ArchivoBlack-Regular, 'Times New Roman', 'sans-serif';
 }
 
+/* Section 1 - Bio */
+
 .resumeBio{
     text-align: center;
+    background-color: #000000;
+    color: white;
+    height: 50vw;
+    display: flex;
+    justify-content: space-around;
+    background: url("../img/blur-6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+#myPhotos{
+    background: url("../img/me-photo-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: 50%;
+    gap: 1;
+}
+
+#myPhotos:hover{
+    background: url("../img/me-photo-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    width: 50%;
+    gap: 1;
+}
+
+#myInfos{
+    gap: 1;
+    height: auto;
+    width: 50%;
+    text-align: left;
+    padding: 5vw;
+    position: relative;
+}
+
+/* Section 2 - Projects */
+
+.myProjects{
+    text-align: center;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 20px;
+}
+
+.card a{
+    color: black;
+}
+
+#cardsSection{
+    margin: 1.1rem;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+/* Section 3 - Contact */
+
+.contact{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+}
+
+#profissionalSection{
+    height: auto;
+    /*gap: 1;*/
+} 
+
+#personalSection{
+    height: auto;
+    /*gap: 1;*/
+}
+
+.textContact{
+    font-size: 1.2rem;
+}
+
+.textContact:hover{
+    color:aqua;
+}
+
+.contact a{
+    color: white;
+}
+
+.contact .row{
+    margin-top: 12rem;
+}
+
+/* Section 4 - Footer */
+
+footer{
+    background-color: #1f1f1f;
+    padding: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Elements */
+
+a{
+    text-decoration: none;
+}
+
+.title2{
+    font-size: 2.5rem;
+    display: block;
+    /*position: absolute;*/
+}
+
+ul{
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li{
+    color: white;
+    margin-right: 10px;
+}
+
+ul li:hover{
+    color:aqua;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+}
+
+.animationIcons{
+    --fa-animation-duration: 1s;
+    --fa-animation-iteration-count: 1;
+}
+
+.link{
+    font-size: 1.3rem;
+}
+
+.link:hover{
+    color:aqua;
+}
+
