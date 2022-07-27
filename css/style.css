@@ -3,13 +3,17 @@
     src: local(ArchivoBlack-Regular), url(../fonts/ArchivoBlack-Regular.ttf);
  }
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) { /*768 ou mais*/
     .card{
         margin-right: 1.2rem;
     }
 
     #cardsSection{
         margin: 0;
+    }
+
+    #profissionalSection{
+        border-right: solid #FFFFFF 1px;
     }
  }
 
@@ -43,10 +47,96 @@
     }
 
     .contact{
-        height: 50vw;
+        height: auto;
     }
  }
 
+ @media screen and (max-width: 700px) {  /*700 ou menos*/
+    .iconMobile{
+        font-size: 2em;
+    }
+ }
+
+ @media screen and (min-width: 700px) {  /*700 ou mais*/
+    .iconMobile{
+        font-size: 3em;
+    }
+ }
+
+ @media screen and (max-width: 991px) { /*991 ou menos*/
+    .hideMobile{
+        display: none;
+    }
+
+    header{
+        margin:0;
+        padding: 0;
+    }
+
+    .headerMobile{
+        height: 5vh;
+        background-color: #000;
+        margin-bottom: 0px;
+        position: fixed;    
+        width: 100%;
+        z-index: 2;
+        padding: 5px;
+    }
+
+    .headerMobile ul{
+        list-style-type: none;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .headerMobile ul li{
+        color: white;
+    }
+
+    .headerMobile ul li:hover{
+        color:aqua;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .resumeBio{
+        padding: 3px;
+    }
+
+    #spaceBetweenMobile{
+        height: 4.5vh;
+    }
+
+    #personalSection{
+        margin-top: 10vh;
+    }
+
+    footer{
+        display: block;
+    }
+ }
+
+ @media screen and (min-width: 992px) { /*992 ou mais*/
+    .spaceTop{
+        margin-top: 2em;
+    }
+
+    .headerMobile{
+        display: none;
+    }
+
+    #spaceBetweenMobile{
+        display: none;
+    }
+
+    .resumeBio{
+        padding: 2px;
+    }
+ }
 
 
 h1, h2, h3{
@@ -116,6 +206,7 @@ h1, h2, h3{
 
 .card{
     margin-bottom: 2rem;
+    padding: 0px;
 }
 
 /* Section 3 - Contact */
@@ -150,7 +241,13 @@ h1, h2, h3{
 }
 
 .contact .row{
-    margin-top: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#division{
+    width: 1px;
+    background-color: #FFFFFF;
 }
 
 /* Section 4 - Footer */
@@ -160,6 +257,18 @@ footer{
     padding: 30px;
     color: #FFFFFF;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btnVoltarAoTopo{
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+    border: none;
+}
+
+#btnVoltarAoTopo:hover{
+    color:aqua;
 }
 
 /* Elements */
@@ -174,19 +283,19 @@ a{
     /*position: absolute;*/
 }
 
-ul{
+.navMain{
     list-style-type: none;
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-ul li{
+.navMain li{
     color: white;
     margin-right: 10px;
 }
 
-ul li:hover{
+.navMain li:hover{
     color:aqua;
 }
 
@@ -209,3 +318,24 @@ nav{
     color:aqua;
 }
 
+.fa-brands:hover{
+    color:aqua;
+}
+
+.circleInfo{
+    border: solid #1f1f1f 1px;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    color: #FFF;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.circleInfo:hover{
+    background-color: #4e4e4e;
+    border: solid #4e4e4e 1px;
+    color: #FFF;
+}
