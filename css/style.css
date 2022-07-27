@@ -27,6 +27,10 @@
         font-size: 0.5em;
     }
 
+    body{
+        background-color: #000;
+    }
+
     .resumeBio i{
         font-size: 1.3em;
     }
@@ -36,8 +40,9 @@
     }
 
     .contact{
-        height: 200vw;
+        height: 225vw;
     }
+    
  }
 
  @media screen and (min-width: 577px) {  /*577 ou mais*/
@@ -48,6 +53,10 @@
 
     .contact{
         height: auto;
+    }
+
+    .resumeBio{
+        padding: 4px;
     }
  }
 
@@ -103,10 +112,6 @@
         padding: 0;
     }
 
-    .resumeBio{
-        padding: 3px;
-    }
-
     #spaceBetweenMobile{
         height: 4.5vh;
     }
@@ -152,7 +157,7 @@ h1, h2, h3{
     height: 50vw;
     display: flex;
     justify-content: space-around;
-    background: url("../img/blur-6.png");
+    background: url("../img/blur-7.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
