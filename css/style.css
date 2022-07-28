@@ -15,6 +15,24 @@
     #profissionalSection{
         border-right: solid #FFFFFF 1px;
     }
+
+    .resumeBio .fa-brands{
+        padding: 5px;
+    }
+ }
+
+ @media screen and (max-width: 767px) { /*767 ou menos*/
+
+    .resumeBio .fa-brands{
+        padding: 3px;
+    }
+ }
+
+ @media screen and (min-width: 500px) and (max-width: 767px) { /*767 ou menos*/
+
+    .contact{
+        height: 155vw;
+    }
  }
 
  @media screen and (max-width: 576px) {  /*576px ou menos*/
@@ -39,10 +57,10 @@
         font-size: 0.9em;
     }
 
-    .contact{
-        height: 225vw;
+
+    .resumeBio{
+        padding: 4px;
     }
-    
  }
 
  @media screen and (min-width: 577px) {  /*577 ou mais*/
@@ -143,6 +161,9 @@
     }
  }
 
+body{
+    background-color: #f8f8f8;
+}
 
 h1, h2, h3{
     font-family: ArchivoBlack-Regular, 'Times New Roman', 'sans-serif';
@@ -196,7 +217,7 @@ h1, h2, h3{
 
 .myProjects{
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #f8f8f8;
     color: black;
     padding: 20px;
 }
@@ -212,6 +233,16 @@ h1, h2, h3{
 .card{
     margin-bottom: 2rem;
     padding: 0px;
+}
+
+.card-footer{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-footer a{
+    font-size: 1.2rem;
 }
 
 /* Section 3 - Contact */
@@ -242,7 +273,7 @@ h1, h2, h3{
 }
 
 .contact a{
-    color: white;
+    color: #fff;
 }
 
 .contact .row{
@@ -266,7 +297,7 @@ footer{
     justify-content: space-between;
 }
 
-#btnVoltarAoTopo{
+#btnVoltarAoTopo, #btnModesLayout{
     background-color: #1f1f1f;
     color: #FFFFFF;
     border: none;
@@ -274,6 +305,15 @@ footer{
 
 #btnVoltarAoTopo:hover{
     color:aqua;
+}
+
+#btnModesLayout:hover{
+    border: solid 1px #FFF;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 
 /* Elements */
@@ -290,18 +330,38 @@ a{
 
 .navMain{
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: space-between;
 }
 
 .navMain li{
-    color: white;
-    margin-right: 10px;
+    color: black;
+    margin-right: 15px;
 }
 
 .navMain li:hover{
     color:aqua;
+}
+
+.btnCleanMenu{
+    border: solid 1px #FFF;
+    background-color: #fff;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.btnCleanMenu:hover{
+    border: solid 1px #FFF;
+    color: aqua;
+    background-color: unset;
+}
+
+.btnCleanMenu strong{
+    padding: 8px;
 }
 
 nav{
@@ -327,6 +387,10 @@ nav{
     color:aqua;
 }
 
+#myProjectSection .fa-brands{
+    padding: 2px;
+}
+
 .circleInfo{
     border: solid #1f1f1f 1px;
     font-size: 15px;
@@ -343,4 +407,14 @@ nav{
     background-color: #4e4e4e;
     border: solid #4e4e4e 1px;
     color: #FFF;
+}
+
+.modeLigth{
+    background-color: #fff;
+    color: #000;
+}
+
+.modeDark{
+    background-color: #000;
+    color: #fff;
 }
