@@ -88,12 +88,17 @@
     }
  }
 
- @media screen and (min-width: 700px) {  /*700 ou mais*/
+ @media screen and (min-width: 700px) and (max-width: 850px){  
+    .iconMobile{
+        font-size: 2.5em;
+    }
+ }
+
+ @media screen and (min-width: 850px) {  /*850 ou mais*/
     .iconMobile{
         font-size: 3em;
     }
  }
-
 
  @media screen and (max-width: 1200px) { 
     .hideMobile3{
