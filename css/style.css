@@ -57,9 +57,8 @@
         font-size: 0.9em;
     }
 
-
     .resumeBio{
-        padding: 4px;
+        padding: 0px;
     }
  }
 
@@ -74,13 +73,18 @@
     }
 
     .resumeBio{
-        padding: 4px;
+        padding: 0px;
     }
+    
  }
 
  @media screen and (max-width: 700px) {  /*700 ou menos*/
     .iconMobile{
         font-size: 2em;
+    }
+    
+    .hideMobile2{
+        display: none;
     }
  }
 
@@ -90,9 +94,21 @@
     }
  }
 
+
+ @media screen and (max-width: 1200px) { 
+    .hideMobile3{
+        display: none;
+    }
+ }
+
  @media screen and (max-width: 991px) { /*991 ou menos*/
     .hideMobile{
         display: none;
+    }
+
+    #myInfos h5{
+        font-size: 1em;
+        margin-top: 1.5rem;
     }
 
     header{
@@ -145,7 +161,7 @@
 
  @media screen and (min-width: 992px) { /*992 ou mais*/
     .spaceTop{
-        margin-top: 2em;
+        margin-top: 2.2em;
     }
 
     .headerMobile{
@@ -330,9 +346,10 @@ a{
 
 .navMain{
     list-style-type: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3vw;
 }
 
 .navMain li{
