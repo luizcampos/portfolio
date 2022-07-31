@@ -126,13 +126,14 @@
     }
 
     .headerMobile{
-        height: 5vh;
+        height: auto;
         background-color: #000;
         margin-bottom: 0px;
         position: fixed;    
         width: 100%;
         z-index: 2;
         padding: 5px;
+        text-align: center;
     }
 
     .headerMobile ul{
@@ -140,7 +141,7 @@
         font-size: 1.4rem;
         display: flex;
         justify-content: space-around;
-    }
+}
 
     .headerMobile ul li{
         color: white;
