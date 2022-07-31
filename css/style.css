@@ -26,6 +26,10 @@
     .resumeBio .fa-brands{
         padding: 3px;
     }
+    
+    #personalSection{
+        margin-top: 10vh;
+    }
  }
 
  @media screen and (min-width: 500px) and (max-width: 767px) { /*767 ou menos*/
@@ -155,9 +159,6 @@
         height: 4.5vh;
     }
 
-    #personalSection{
-        margin-top: 10vh;
-    }
 
     footer{
         display: block;
@@ -202,7 +203,7 @@ h1, h2, h3{
     background: url("../img/blur-7.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #myPhotos{
