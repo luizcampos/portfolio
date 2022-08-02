@@ -411,7 +411,7 @@ nav{
     color:aqua;
 }
 
-#myProjectSection .fa-brands{
+#myProjectSection .fa-brands, #myProjectSection .fa-solid{
     padding: 2px;
 }
 
