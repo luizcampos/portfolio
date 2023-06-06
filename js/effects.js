@@ -65,6 +65,7 @@ var projects = {
         'Projeto para auxiliar professores na avaliação e no acompanhamento de grupos acadêmicos',
         'Projeto com app híbrido para mobile e fórum para dúvidas na matéria de física'],
     status: ['em andamento', 'finalizado', 'finalizado', 'em andamento', 'finalizado', 'finalizado', 'finalizado', 'finalizado'],
+    atuacao: ['Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (PHP)', 'Front', 'Front e back (JS e C#)', 'Front e back (JS e PHP)'],
     about: [
         'Novas funcionalidades surgirão em breve!',
         'Foi o meu primeiro contato real com ReactJS, o que me motivou ainda mais!',
@@ -116,7 +117,8 @@ for(var i = 0; i < projects.title.length; i++){
                 <h5 class="card-title">${projects.title[i]}
                     <button type="button" class="circleInfo hideMobile" data-toggle="tooltip" data-placement="top" title="${projects.about[i]}">?</button>
                 </h5>
-                <p class="card-text">${projects.description[i]}.</p>`
+                <p class="card-text">${projects.description[i]}.</p>
+                <span class="card-text"><strong>Atuação: </strong>${projects.atuacao[i]}.</span>`
     
     if(projects.status[i] === 'finalizado'){
         newDiv += `<p><strong style="color: #32CD32;">STATUS: </strong> ${projects.status[i]}.</p>`
