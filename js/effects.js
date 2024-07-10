@@ -45,8 +45,9 @@ btnModes.addEventListener('click', function(){
 //Cards projects
 
 var projects = {
-    title: ['Palette Generator', 'Ignite Lab', 'Quiz HP', 'Calculator', 'API Restful myDreamBox', 'Fazendo Arte', 'Monitore', 'Física não é um monstro'],
+    title: ['Organo (Alura)', 'Palette Generator', 'Ignite Lab', 'Quiz HP', 'Calculator', 'API Restful myDreamBox', 'Fazendo Arte', 'Monitore', 'Física não é um monstro'],
     imageTop: [
+        './img/cards/organo-alura.png',
         './img/cards/generator-photo.png',
         './img/cards/ignite-lab-photo.png',
         './img/cards/quiz-hp-photo.png',
@@ -56,6 +57,7 @@ var projects = {
         './img/cards/monitore-photo.png',
         './img/cards/fneum-photo.png'],
     description: [
+        'Sistema React básico para cadastro e exibição de colaboradores feito no curso da Alura',
         'Um gerador de paleta de cores prático para facilitar a vida dos designers',
         'Projeto feito durante o evento da Rocketseat, com foco em React',
         'Um quiz rápido sobre a história da melhor saga de todos os tempos',
@@ -64,9 +66,10 @@ var projects = {
         'Gerenciamento, conteúdo e estilização do site na plataforma NuvemShop',
         'Projeto para auxiliar professores na avaliação e no acompanhamento de grupos acadêmicos',
         'Projeto com app híbrido para mobile e fórum para dúvidas na matéria de física'],
-    status: ['em andamento', 'finalizado', 'finalizado', 'em andamento', 'finalizado', 'finalizado', 'finalizado', 'finalizado'],
-    atuacao: ['Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (PHP)', 'Front', 'Front e back (JS e C#)', 'Front e back (JS e PHP)'],
+    status: ['finalizado', 'em andamento', 'finalizado', 'finalizado', 'em andamento', 'finalizado', 'finalizado', 'finalizado', 'finalizado'],
+    atuacao: ['Front', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (JS)', 'Front e back (PHP)', 'Front', 'Front e back (JS e C#)', 'Front e back (JS e PHP)'],
     about: [
+        'Aprendi novos conceitos com esse projeto, como filtro, renderização condicional e props.',
         'Novas funcionalidades surgirão em breve!',
         'Foi o meu primeiro contato real com ReactJS, o que me motivou ainda mais!',
         'A minha saga favorita foi tema do primeiro projeto pessoal com JavaScript',
@@ -76,6 +79,7 @@ var projects = {
         'TCC do curso de graduação Análise e desenvolvimento de sistemas desenvolvido por mim e pelo meu amigo Douglas Kurotaki.',
         'TCC do curso técnico em informática para auxiliar os alunos no estudo da física.'],
     techs: [
+        ['HTML5', 'CSS3', 'JavaScript', 'React'],
         ['HTML5', 'CSS3', 'JavaScript'],
         ['HTML5', 'CSS3', 'JavaScript', 'React'],
         ['HTML5', 'CSS3', 'JavaScript'],
@@ -86,6 +90,7 @@ var projects = {
         ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']
     ],
     linkWeb: [
+        'https://organo-alura-ecru.vercel.app/',
         'https://palette-generator-kappa.vercel.app/',
         'https://ignite-lab-react-gamma.vercel.app/',
         'https://quiz-hp-wine.vercel.app/',
@@ -96,6 +101,7 @@ var projects = {
         ''
         ],
     linkGitub: [
+        'https://github.com/luizcampos/react-alura-lessons/tree/main/Projetos/organo',
         'https://github.com/luizcampos/palette-generator',
         'https://github.com/luizcampos/ignite-lab-react',
         'https://github.com/luizcampos/quiz-hp',
